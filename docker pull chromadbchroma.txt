@@ -1,0 +1,7 @@
+docker pull chromadb/chroma
+
+docker run -d -p 8000:8000 chromadb/chroma
+
+docker compose exec chatollama npx prisma migrate dev
+
+docker compose up
